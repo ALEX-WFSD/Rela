@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8" >
+        <title>app</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/feather.min.js"></script>
+       
+    </head>
+    
+    
+    
+    
+    <body>
+       
+        <div id="Ingreso" class="Forma">
+            <span id="titulo" > Relationer </span> <hr>  
+            <br>
+            <br>
+          *
+          <input type="email" id="correo"  placeholder="Correo" >
+          <br><br>
+          *
+          <input type="password" placeholder="Contraseña" id="contrasena" >
+          <br><br>
+          <button id="btnIngresar">Relacionate</button>
+          <br><br><br>
+          <span id="btnRegistrar">Crear Cuenta  </span>
+        </div>
+        <hr>
+        <hr>
+        <div id="Registro" class="Forma">
+            <span id="titulo" > CUENTA  CUENTA </span><hr><br>
+            *
+            <input type="email" placeholder="Correo" id="correoR"  ><br><br>
+            *
+            <input type="text" placeholder="Nombre" id="nombre" ><br>
+              
+            <br>
+            *
+            <input type="password" placeholder="Contraseña" id="contrasenaR"/>
+            <br><br>
+            *
+            <input type="password" placeholder="Confirma contraseña" id="confirmacion">
+            <br><br>
+            * 
+            <input type="date" placeholder="Fcha de nacimineto" id="fecha">
+            
+            <br><br>
+            <button id="btnRegistro">Registrar</button>
+    
+        </div>
+
+        <div id="principal" class="Forma">
+              <div id="menu">
+                  <span id="btnMenu" onclick="abrirBarra()" >
+                    
+                      <i data-feather="align-justify" ></i>
+                  </span>
+
+              </div>
+            Relationer 
+            <br>
+            Bienvenido <span id="nombreP"> </span>
+            <div id="redactar">
+                para: <br>
+                <input type="text" id="correoM"><br>
+                Mensaje: <br>
+                <textarea  id="mensajeM" cols="30" rows="10"></textarea>
+                <br>
+                <button  id="enviarM" class="btn">enviar</button>
+            </div>
+            <div id="mensajes"> </div>
+            <div id="camara" >
+                <div class="container-photo">
+                    <img id="photo" class="photo" src="">
+                </div>
+                <input type="file" accept="image/*" capture="camera" id="camera" class="inputget"/>
+                  <button id="btnOpen">Tomar Foto</button><br>&nbsp;&nbsp;
+                  <button id="mapa" >Mapa</button>
+                  <input id="lugar" type="text">
+
+
+
+            </div>
+        </div>
+        <div id="barraMenu" class="menu" >
+            <a href="javascript:void(0)" class="botonCerrar" onclick="cerrarBarra()"><i data-feather="x-square" >&times;</i></a><br>
+            <a href="javascript:void(0)" class="opciones" onclick="mesajes()" > <i data-feather="mail" ></i>&nbsp;Mensajes</a><br>
+            <a href="javascript:void(0)" onclick="tomarFoto()" class="opciones" ><i data-feather="instagram"></i>&nbsp;Fotos</a><br>
+            <a href="javascript:void(0)" onclick="cerrarSesion()" class="opciones" ><i data-feather="arrow-right-circle"></i>&nbsp;cerrar</a><br>
+            
+
+        </div>
+       
+
+ <script src="js/app.js"></script>
+ <script>
+     feather.replace()
+ </script>
+    </body>
+ 
+
+
+
+
+
+</html>

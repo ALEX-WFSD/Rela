@@ -1,0 +1,102 @@
+#titulo
+{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(194, 64, 64)
+}
+#principal,#Registro,#camara
+{
+    display: none;
+}           
+
+  .Forma{
+    width: 100%;
+    max-width: 150px;
+    padding: 50px;
+    margin: 0%;
+  }
+  #principal
+  {
+    width: 100%;
+    max-width: 150px;
+    padding: 50px;
+    margin: 0%;
+  }  
+  
+  .input[type="email"],.input[type="password"],.input[type="text"] {
+    border: 1px dotted rgb(212, 5, 5);
+  border-radius: 50px;
+
+
+  -webkit-appearance: none;
+  }
+  
+  .input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 25;
+    border-top-right-radius: 0;
+  }
+  .errorCampo{
+    border-color: red;
+    border-width: 2px;
+    
+  }
+  #btnRegistrar,#btnRegistro,#btn{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:rgb(194, 64, 64);
+    border-radius: 6px;
+    border: 2px solid black;
+  }
+  #btnRegistrar:hover,#btnRegistro:hover,#btn:hover{
+    color:rgb(194, 64, 64);
+    background-color: #ffffff;
+  }
+  .menu
+  {
+    padding: 5px;
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  botonCerrar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: rfb(173,173,255);
+    text-decoration: none;
+  }
+  .opciones{
+    text-decoration: none;
+    color: rgb(173,173,255)
+  }
+  .opciones:visited{
+    
+    color: rgb(173,173,255)
+  }
+  .inputget{
+    display: none;
+  }
+  .container-photo{
+    background-color: orange;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+  .photo{
+    height: 200px;
+    object-fit: cover;
+  }
+  
